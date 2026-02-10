@@ -11,7 +11,7 @@ artifacts/
 
 # 3. 處理你提到的 "Messy" 狀態
 # 讓 Git 忽略掉那些舊版本資料夾，GitHub 上只會看到乾淨的 src
-src/Old Version*/
+Old Version*/
 
 # 4. Jupyter Notebook 暫存
 .ipynb_checkpoints/
