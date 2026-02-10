@@ -1,0 +1,12 @@
+# 核心運算與數據處理
+polars>=1.0.0          # 支援 LazyFrame 與 streaming 模式 [cite: 2026-01-27]
+numpy>=1.24.0          # 向量化數值運算
+scipy>=1.10.0          # 包含 fsolve 求解器與 norm 分佈
+
+# 數據獲取
+yfinance>=0.2.30       # 抓取 Ticker 價格與財務報表
+
+# 視覺化與介面
+streamlit>=1.30.0      # 儀表板框架
+plotly>=5.18.0         # 互動式繪圖與熱力圖
+pandas>=2.1.0          # yfinance 與 streamlit 內部相容性需求

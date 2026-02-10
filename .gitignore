@@ -1,0 +1,22 @@
+# 1. Python 環境與快取 (絕對不要傳，會導致路徑衝突)
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. 數據與成果目錄 (保持 Repo 輕量)
+# 遵守「數據驅動」原則，讓使用者自行透過 ETL 下載
+data/
+artifacts/
+
+# 3. 處理你提到的 "Messy" 狀態
+# 讓 Git 忽略掉那些舊版本資料夾，GitHub 上只會看到乾淨的 src
+src/Old Version*/
+
+# 4. Jupyter Notebook 暫存
+.ipynb_checkpoints/
+
+# 5. 系統與 IDE
+.vscode/
+.DS_Store
+Thumbs.db
