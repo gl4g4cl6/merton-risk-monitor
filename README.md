@@ -71,6 +71,7 @@ streamlit run src/step03_app_10.py
 
 
 🛡️ 開發者檢查站 (Developer Checkpoints)
+
 效能優化：
 所有數據處理均強制採用 collect(streaming=True) 以確保單機 HPC 效能 。
 
