@@ -1,5 +1,7 @@
 🛡️ Merton Risk Monitor: 信用風險結構化監控系統
-本專案開發於 Windows 11 (WSL 2 Ubuntu 24.04) 環境。這是一個端到端的信用風險評估工具，旨在透過 Merton 結構型模型 (Merton Structural Model)，將市場股價資訊轉化為企業的違約機率 (PD) 與違約距離 (DD)。
+本專案開發於 Windows 11 (WSL 2 Ubuntu 24.04) 環境。
+這是一個端到端的信用風險評估工具，旨在透過 Merton 結構型模型 (Merton Structural Model)，
+將市場股價資訊轉化為企業的違約機率 (PD) 與違約距離 (DD)。
 
 💡 建構基礎 (The Essence)
 將公司股權視為對公司總資產的買權 (Call Option)，藉此推導出隱含的資產價值與波動率，以衡量企業償債能力的邊際安全性。
