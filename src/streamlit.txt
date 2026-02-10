@@ -1,0 +1,1 @@
+streamlit run src/step03_app_10.py
