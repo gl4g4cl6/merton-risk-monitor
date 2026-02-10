@@ -29,6 +29,7 @@ $$d_2 = d_1 - \sigma_A \sqrt{T}$$
 
 $$DD = \frac{\ln(A/D) + (r - 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
 
+
 🛠️ 技術架構 (System Architecture)
 專案採模組化設計，強制分離邏輯、數據與表現層：
 
@@ -47,6 +48,7 @@ step02_viz_10.py
 *** 應用介面 ***
 step03_app_10.py
 Streamlit 互動式儀表板，支援即時 Ticker 數據抓取與風險監控。
+
 
 🚀 執行指南 (Actionable Steps)
 環境需求
@@ -68,6 +70,7 @@ pip install -r requirements.txt
 啟動監控儀表板：
 Bash
 streamlit run src/step03_app_10.py
+
 
 
 🛡️ 開發者檢查站 (Developer Checkpoints)
