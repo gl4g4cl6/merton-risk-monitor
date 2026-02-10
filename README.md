@@ -16,8 +16,8 @@
 
 $$E = A \cdot N(d_1) - D e^{-rT} \cdot N(d_2)$$
 
-其中關鍵參數定義如下：
 
+其中關鍵參數定義如下：
 資產價值與風險路徑：
 
 $$d_1 = \frac{\ln(A/D) + (r + 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
