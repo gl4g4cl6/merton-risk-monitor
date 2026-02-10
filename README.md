@@ -19,30 +19,31 @@ $$E = A \cdot N(d_1) - D e^{-rT} \cdot N(d_2)$$
 
 其中關鍵參數定義如下：
 
-資產價值與風險路徑：
+（1）資產價值與風險路徑：
 
 $$d_1 = \frac{\ln(A/D) + (r + 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
 
 $$d_2 = d_1 - \sigma_A \sqrt{T}$$
 
-違約距離 (Distance to Default)：
+（2）違約距離 (Distance to Default)：
 
 $$DD = \frac{\ln(A/D) + (r - 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
 
 🛠️ 技術架構 (System Architecture)
 專案採模組化設計，強制分離邏輯、數據與表現層：
-模組
-檔案名稱
-技術重點
+
 *** 核心模型 ***
 step00_model.py
 使用 scipy.optimize.fsolve 進行非線性聯立方程求解。
+
 *** 數據工程 ***
 step01_etl_02.py
 Polars LazyFrame 驅動，支持高效能數據血統分析與多維波動率計算。
+
 *** 視覺化 ***
 step02_viz_10.py
 基於 Plotly 的信用結構疊圖與壓力測試熱力圖。
+
 *** 應用介面 ***
 step03_app_10.py
 Streamlit 互動式儀表板，支援即時 Ticker 數據抓取與風險監控。
@@ -51,6 +52,7 @@ Streamlit 互動式儀表板，支援即時 Ticker 數據抓取與風險監控�
 環境需求
 Python 3.10+
 WSL2 (建議) 或 Windows/Mac 環境
+
 安裝步驟
 複製專案：
 Bash
@@ -68,7 +70,12 @@ Bash
 streamlit run src/step03_app_10.py
 
 
-🛡️ 開發者檢查哨 (Developer Checkpoints)
-效能優化：所有數據處理均強制採用 collect(streaming=True) 以確保單機 HPC 效能 。
-數據驅動：禁止使用 pl.Date.today()，所有邏輯嚴格遵循歷史數據路徑。
-誤差分析：內建數據檢核機制，確保求解器收斂後之資產價值具備學術級誤差一致性。
+🛡️ 開發者檢查站 (Developer Checkpoints)
+效能優化：
+所有數據處理均強制採用 collect(streaming=True) 以確保單機 HPC 效能 。
+
+數據驅動：
+禁止使用 pl.Date.today()，所有邏輯嚴格遵循歷史數據路徑。
+
+誤差分析：
+內建數據檢核機制，確保求解器收斂後之資產價值具備學術級誤差一致性。
