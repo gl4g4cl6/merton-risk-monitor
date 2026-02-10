@@ -10,12 +10,17 @@
 藉此推導出隱含的資產價值與波動率，以衡量企業償債能力的邊際安全性。
 
 📖 核心理論與公式 (The Theory)
-根據 Merton (1974)，公司股權價值 $E$ 可表示為：
+
+根據 Merton (1974)，
+公司股權價值 $E$ 可表示為：
 $$E = A \cdot N(d_1) - D e^{-rT} \cdot N(d_2)$$
+
 其中關鍵參數定義如下：
+
 資產價值與風險路徑：
 $$d_1 = \frac{\ln(A/D) + (r + 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
 $$d_2 = d_1 - \sigma_A \sqrt{T}$$
+
 違約距離 (Distance to Default)：
 $$DD = \frac{\ln(A/D) + (r - 0.5 \sigma_A^2)T}{\sigma_A \sqrt{T}}$$
 
